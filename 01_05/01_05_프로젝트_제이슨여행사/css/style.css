@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+#wrap {width:100%;height:100%;display:flex;flex-flow:column nowrap;}
+#wrap .slide-container {width:100%;position:relative;margin:auto;background:url(../img/work-1.jpg) no-repeat 0 0;background-size:cover;width:500px;height:500px;border-radius:50%;border:5px solid #ccc;}
+#wrap .slide-container .slide {position:absolute;top:0;left:0;margin-top:-50px;margin-left:-50px;display:inline-block;width:100px;height:100px;border-radius:50%;border:3px solid #aaa;}
+#wrap .slide-container .slide1  {background:url(../img/work-2.jpg)  no-repeat 0 0;background-size:cover;}
+#wrap .slide-container .slide2  {background:url(../img/work-3.jpg)  no-repeat 0 0;background-size:cover;}
+#wrap .slide-container .slide3  {background:url(../img/work-4.jpg)  no-repeat 0 0;background-size:cover;}
+#wrap .slide-container .slide4  {background:url(../img/work-5.jpg)  no-repeat 0 0;background-size:cover;}
+#wrap .slide-container .slide5  {background:url(../img/work-6.jpg)  no-repeat 0 0;background-size:cover;}
+#wrap .slide-container .slide6  {background:url(../img/work-7.jpg)  no-repeat 0 0;background-size:cover;}
+#wrap .slide-container .slide7  {background:url(../img/work-8.jpg)  no-repeat 0 0;background-size:cover;}
+#wrap .slide-container .slide8  {background:url(../img/work-9.jpg)  no-repeat 0 0;background-size:cover;}
+#wrap .slide-container .slide9  {background:url(../img/work-10.jpg) no-repeat 0 0;background-size:cover;}
+#wrap .slide-container .slide10 {background:url(../img/work-11.jpg) no-repeat 0 0;background-size:cover;}
+#wrap .slide-container .slide11 {background:url(../img/work-12.jpg) no-repeat 0 0;background-size:cover;}
+#wrap .slide-container .slide12 {background:url(../img/work-1.jpg)  no-repeat 0 0;background-size:cover;}
+
+#wrap .button-wrap {margin-top:auto;display:flex;flex-flow:row wrap;}
+#wrap .button-wrap span {display:block;flex:1 1 auto;}
+#wrap .button-wrap span a {display:block;line-height:50px;color:#fff;text-align:center;}
+#wrap .button-wrap span:nth-child(1) a {background:#ddd;transition:background .4s;}
+#wrap .button-wrap span:nth-child(1) a:hover {background:#000;}
+#wrap .button-wrap span:nth-child(2) a {background:#aaa;transition:background .4s;}
+#wrap .button-wrap span:nth-child(2) a:hover {background:#000;}
