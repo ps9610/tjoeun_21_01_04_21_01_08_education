@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>Jason Travel Service</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=Emulate10"> -->
+    <meta name="Viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0. maximum-scale=1.6, user-scalable=no">
+    <meta name="Title" content="Jason Travel Service">
+    <meta name="Publisher" content="프론트엔드 박소혜">
+    <meta name="Author-date" content="2021-01-05"> 
+    <meta name="Author" content="Jason Travel Service">
+    <meta name="Copyright" content="Jason Travel Service">
+    <meta name="Keywords" content="Jason Travel Service, 여행, 관광">
+    <meta name="description" content="Jason Travel Service 전문 여행사입니다."> 
+    <meta name="Robots" content="index, follow">
+
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="./img/jts_logo_pavicon.jpg">
+    <link rel="apple-touch-icon" href=".img/jts_logo_pavicon.jpg">
+
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+    <!-- 오픈 아이콘 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- font-awesome 4.0 -->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script> <!-- font-awesome 5.0 -->
+
+    <!-- 오픈소스 -->
+    <script src="./js/lib/jquery-1.12.4.min.js"></script>
+    <script src="./js/lib/prefixfree.min.js"></script>
+    <script src="./js/lib/jquery.touchSwipe.js"></script>
+    <script src="./js/lib/jquery.easing.1.3.js"></script>
+
+    <!-- 조건 주석문 익스프롤러 하위 IE9 IE8 IE7 폴리필 -->
+    <!-- 스크립트 스타일 -->
+
+    <!--[if lte IE 9]>
+        <script src="./js/lib/IE9.js"></script>
+    <![endif]-->
+
+    <!--[if lte IE 8]>
+        <script src="./js/lib/html5shiv.min.js"></script>
+        <script src="./js/lib/jqPIE.js"></script>
+        <script src="./js/lib/PIE.js"></script>
+        <link rel="stylesheet" type="text/css" href="./css/ie8.css">
+    <![endif]-->
+
+    <!--[if lte IE 7]>
+        <link rel="stylesheet" type="text/css" href="./css/ie7.css">
+    <![endif]-->
+ 
+</head>
+<ul id="skip">
+    <li><a href="#header" title="메뉴바로가기">메뉴바로가기</a></li>
+    <li><a href="$main" title="본문바로가기">본문바로가기</a></li>
+    <li><a href="#footer" title="하단바로가기">하단바로가기</a></li>
+</ul>
+<body>
+    <div id="wrap">
+
+        <header id="header">
+            <div class="wrap">
+                <div class="gap">
+                    <ul class="content clearfix">
+
+                        <li class="logo">
+                            <a href="javascript:" title="로고">
+                                <img src="./img/logo_white.png" alt="로고_화이트" class="white">
+                                <img src="./img/logo_color.png" alt="로고_컬러" class="color">
+                            </a>
+                        </li>
+
+                        <li class="left">
+                            <a href="javascript:" title="메뉴버튼">
+                                <span class="menu-line">
+                                    <i class="line line0"></i>
+                                    <i class="line line1"></i>
+                                    <i class="line line2"></i>
+                                </span>
+                                <span class="txt-wrap">Menu</span>
+                            </a>
+                        </li>
+
+                        <li class="right">
+                            <ul>
+                                <li>
+                                    <span><a href="javascript:" title="로그인" class="login">LOGIN</a></span>
+                                </li>
+                                <li>
+                                    <span><i></i></span>
+                                </li>
+                                <li>
+                                    <span><a href="javascript:" title="회원가입" class="join">JOIN</a></span>
+                                </li>
+                                <li>
+                                    <span><a href="javascript:" title="견적문의" class="confirm">견적문의</a></span>
+                                </li>
+                                <li>
+                                    <span><a href="javascript:" title="찾기" class="search">
+                                        <img src="./img/search_i_01.png" alt="찾기버튼" class="search-white">
+                                        <img src="./img/search_i.png" alt="찾기버튼" class="search-black">
+                                    </a></span>
+                                </li>
+                            </ul>                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main id="main">
+
+            <section id="section1">
+                <div class="wrap">
+                    <div class="gap">
+                        <div class="content">
+                            <div class="slide-container">
+                                <div class="slide-view">
+                                    <ul class="slide-wrap clearfix">
+                                        <li class="slide slide3"></li>
+                                        <li class="slide slide0"></li>
+                                        <li class="slide slide1"></li>
+                                        <li class="slide slide2"></li>
+                                        <li class="slide slide3"></li>
+                                        <li class="slide slide0"></li>
+                                    </ul>
+                                </div>
+                                <div class="btn-wrap">
+                                    <div class="next-btn-wrap">
+                                        <a href="javascript:" class="blind next-btn" title="다음 슬라이드">다음 슬라이드</a>
+                                    </div>
+                                    <div class="prev-btn-wrap">
+                                        <a href="javascript:" class="blind prev-btn" title="이전 슬라이드">이전 슬라이드</a>
+                                    </div>
+                                </div>
+                                <div class="page-btn-wrap">
+                                    <div class="page-btn">
+                                        <a href="javascript:" class="blind page-btn0" title="1페이지">1페이지</a>
+                                    </div>
+                                    <div class="page-btn">
+                                        <a href="javascript:" class="blind page-btn0" title="2페이지">2페이지</a>
+                                    </div>
+                                    <div class="page-btn">
+                                        <a href="javascript:" class="blind page-btn0" title="2페이지">2페이지</a>
+                                    </div>
+                                    <div class="page-btn">
+                                        <a href="javascript:" class="blind page-btn0" title="3페이지">3페이지</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section2">
+                <div class="wrap">
+                    <div class="gap">
+                        <div class="content">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section3">
+                <div class="wrap">
+                    <div class="gap">
+                        <div class="content">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section4">
+                <div class="wrap">
+                    <div class="gap">
+                        <div class="content">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section5">
+                <div class="wrap">
+                    <div class="gap">
+                        <div class="content">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer id="footer">
+            <div class="wrap">
+                <div class="gap">
+                    <div class="content">
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

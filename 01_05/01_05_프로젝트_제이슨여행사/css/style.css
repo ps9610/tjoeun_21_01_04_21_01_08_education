@@ -50,9 +50,9 @@
 #wrap #main #section1 .wrap {width:100%;height:100%;}
 #wrap #main #section1 .wrap .gap {width:100%;height:100%;}
 #wrap #main #section1 .wrap .gap .container {width:100%;height:100%;}
-#wrap #main #section1 .wrap .gap .container .slide-container {position:relative;width:100%;height:100%;}
-#wrap #main #section1 .wrap .gap .container .slide-container .slide-view {position:relative;width:100%;height:100%;}
-#wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap {position:relative;width:calc(100%*6);margin-left:-100%;height:100%;}
+#wrap #main #section1 .wrap .gap .container .slide-container {position:relative;position:relative;width:100%;height:100%;}
+#wrap #main #section1 .wrap .gap .container .slide-container .slide-view {position:relative;position:relative;width:100%;height:100%;}
+#wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap {position:relative;left:(-100%*0);width:calc(100%*6);margin-left:-100%;height:100%;}
 #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide {float:left;width:1903px;height:100%;}
 #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide0 {background:url(../img/slide0.jpg) no-repeat 50% 0;background-size:cover;}
 #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide1 {background:url(../img/slide1.jpg) no-repeat 50% 0;background-size:cover;}
@@ -63,5 +63,6 @@
 #wrap #main #section3 {z-index:2;position:relative;width:100%;height:auto;background:#fff;height:700px;/* 임시높이 */}
 #wrap #main #section4 {z-index:2;position:relative;width:100%;height:auto;background:#f6f6f6;height:500px;/* 임시높이 */}
 #wrap #main #section5 {z-index:2;position:relative;width:100%;height:auto;background:#fff;height:250px;/* 임시높이 */}
-#wrap #footer {z-index:2;position:relative;width:100%;height:253.4px;/* 임시높이 */background:#303030;} /* 고정이미지가 내려가면 푸터를 가리니까 메인이랑 순서를 바꿈 */
+#wrap #footer {z-index:2;position:relative;width:100%;height:253.4px;/* 임시높이 */background:#303030;} 
+/* 고정이미지가 내려가면 푸터를 가리니까(마치 몸통은 이불덮고 발은 나오것마냥) z-index 순서를 메인이랑 바꿈 */
 
