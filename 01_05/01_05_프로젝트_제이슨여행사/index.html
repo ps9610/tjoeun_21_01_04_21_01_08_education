@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <title>삼각함수와 원주율 각도를 응용하여 둥근 원테두리를 회전하는 슬라이드 애니메이션</title>
+    <title>Jason Travel Service</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=Emulate10"> -->
-    <meta name="Viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0. maximum-scale=1.6, user-scalable=no"> <!-- input창 입력 시 확대되는거 막아줌 -->
-    <!-- initial-scale=1.0 :초기값 minimum-scale=1.0:본래 사이즈보다 줄이지 못하게, maximum-scale=1.6: 본래크기보다 1.6배만 크게, user-scalable=no:폼 요소 선택(포커스) 시 확대 현상을 제거 (사용자가 손가락으로 확대못하게함) -->
-    <meta name="Title" content="삼각함수와 원주율 각도를 응용하여 둥근 원테두리를 회전하는 슬라이드 애니메이션">
+    <meta name="Viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0. maximum-scale=1.6, user-scalable=no">
+    <meta name="Title" content="Jason Travel Service">
     <meta name="Publisher" content="프론트엔드 박소혜">
-    <meta name="Author-date" content="2020-12-30"> 
-    <meta name="Author" content="삼각함수와 원주율 각도를 응용하여 둥근 원테두리를 회전하는 슬라이드 애니메이션">
-    <meta name="Copyright" content="삼각함수와 원주율 각도를 응용하여 둥근 원테두리를 회전하는 슬라이드 애니메이션">
-    <meta name="Keywords" content="삼각함수와 원주율 각도를 응용하여 둥근 원테두리를 회전하는 슬라이드 애니메이션">
-    <meta name="description" content="삼각함수와 원주율 각도를 응용하여 둥근 원테두리를 회전하는 슬라이드 애니메이션"> 
+    <meta name="Author-date" content="2021-01-05"> 
+    <meta name="Author" content="Jason Travel Service">
+    <meta name="Copyright" content="Jason Travel Service">
+    <meta name="Keywords" content="Jason Travel Service, 여행, 관광">
+    <meta name="description" content="Jason Travel Service 전문 여행사입니다."> 
     <meta name="Robots" content="index, follow">
 
     <!-- 파비콘 -->
-<!--     <link rel="shortcut icon" href="./img/brando-32x32-1.png">
-    <link rel="apple-touch-icon" href=".img/brando-32x32-1.png"> -->
+    <link rel="shortcut icon" href="./img/jts_logo_pavicon.jpg">
+    <link rel="apple-touch-icon" href=".img/jts_logo_pavicon.jpg">
 
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -54,32 +53,138 @@
     <![endif]-->
  
 </head>
+<ul id="skip">
+    <li><a href="#header" title="메뉴바로가기">메뉴바로가기</a></li>
+    <li><a href="$main" title="본문바로가기">본문바로가기</a></li>
+    <li><a href="#footer" title="하단바로가기">하단바로가기</a></li>
+</ul>
 <body>
-    <div id="wrap"> 
+    <div id="wrap">
+        <header id="header"> <!-- height:124px position:fixed bgfff/transparent-->
+            <div class="wrap"> <!-- width :1570 -->
+                <div class="gap"> <!-- margin: 0 20px -->
+                    <div class="container">
+                        <ul class="clearfix">
+                            <li> <!-- 로고 / 로고가 가운데에 있지만 탭 키로 접근할 때 가장 먼저 접근하도록 하기 위해서 = 접근성땜에 -->
+                                
+                                <a href="http://www.jasontravel.co.kr/main/main.html" class="logo-btn">
+                                    <img src="./img/logo_white.png" alt="logo_white" class="white">
+                                    <img src="./img/logo_color.png" alt="logo_color" class="color">
+                                </a>
+                            </li>
+                            <li> <!-- 왼쪽메뉴 -->
+                                <a href="javascript:" class="menu-bar">
+                                    <span class="line-box">
+                                        <i class="line line1"></i>
+                                        <i class="line line2"></i>
+                                        <i class="line line3"></i>
+                                    </span>
+                                    <span class="text">Menu</span>
+                                </a>
+                            </li>
+                            <li> <!-- 오른쪽메뉴 -->
+                                <ul>
+                                    <li><span><a href="javascript:" title="login" class="login-btn">LOGIN</a></span></li>
+                                    <li><span><i></i></span></li>
+                                    <li><span><a href="javascript:" title="join" class="join-btn">JOIN</a></span></li>
+                                    <li><span><a href="javascript:" title="quote Contact" class="confirm-btn">견적문의</a></span></li> <!-- 높이50 넓이110 -->
+                                    <li><span><a href="javascript:" title="search" class="search-btn">
+                                        <img src="./img/search_i_01.png" alt="search icon" class="m-white">
+                                        <img src="./img/search_i.png" alt="search icon" class="m-black">
+                                    </a></span></li>
+                                </ul>
+                            </li> 
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main id="main">
+            <section id="section1"> <!-- bg img(slide) width:cover -->
+                <div class="wrap">
+                    <div class="gap">
+                        <div class="container">
+                            <div class="slide-container">
+                                <div class="slide-view">
+                                    <ul class="slide-wrap clearfix"> <!-- 큰 홈페이지는 호환성때문에 flexbox 쓰지 말고 float쓰기 -->
+                                        <li class="slide slide3"></li>
+                                        <li class="slide slide0"></li>
+                                        <li class="slide slide1"></li>
+                                        <li class="slide slide2"></li>
+                                        <li class="slide slide3"></li>
+                                        <li class="slide slide0"></li>
+                                    </ul>
+                                </div>
+                                <span class="next-wrap"><a href="javascript:" class="blind next-btn" title="next button">next button</a></span>
+                                <span class="prev-wrap"><a href="javascript:" class="blind prev-btn" title="prev button">prev button</a></span>
+                                <span class="next-section"><a href="javascript:" class="next-section-btn smooth-btn"></a></span>
+                                <div class="page-btn-wrap">
+                                    <ul>
+                                        <li>
+                                            <div><a href="javascript:" class="blind page-btn" title="page button">page-btn</a></div>
+                                        </li>
+                                        <li>
+                                            <div><a href="javascript:" class="blind page-btn" title="page button">page-btn</a></div>
+                                        </li>
+                                        <li>
+                                            <div><a href="javascript:" class="blind page-btn" title="page button">page-btn</a></div>
+                                        </li>
+                                        <li>
+                                            <div><a href="javascript:" class="blind page-btn" title="page button">page-btn</a></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section2"> <!-- gallery --><!-- bg #fff -->
+                <div class="wrap">
+                    <div class="gap"> <!-- gap : 0 -->
+                        <div class="container">
 
-        <div class="slide-container">
-            <span class="slide slide1"></span>
-            <span class="slide slide2"></span>
-            <span class="slide slide3"></span>
-            <span class="slide slide4"></span>
-            <span class="slide slide5"></span>
-            <span class="slide slide6"></span>
-            <span class="slide slide7"></span>
-            <span class="slide slide8"></span>
-            <span class="slide slide9"></span>
-            <span class="slide slide10"></span>
-            <span class="slide slide11"></span>
-            <span class="slide slide12"></span>
-        </div>
-        <div class="button-wrap">
-            <span>
-                <a href="#" class="prevBtn">Prev</a>
-            </span>
-            <span>
-                <a href="#" class="nextBtn">Next</a>
-            </span>
-        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section3"> <!-- bg #f6f6f6 -->
+                <div class="wrap">
+                    <div class="gap">
+                        <div class="container">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section4"> <!-- gallery --><!-- bg #fff -->
+                <div class="wrap">
+                    <div class="gap"> <!-- gap : 0 -->
+                        <div class="container">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section5"> <!-- bg #fff -->
+                <div class="wrap">
+                    <div class="gap">
+                        <div class="container">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="footer"> <!-- bg #303030 -->
+            <div class="wrap">
+                <div class="gap">
+                    <div class="container">
+
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
-    <script src="./js/radianSlide.js"></script>
 </body>
 </html>
