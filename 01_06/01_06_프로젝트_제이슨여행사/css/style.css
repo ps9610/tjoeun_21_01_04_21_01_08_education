@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+#wrap #header {z-index:3;position:fixed;top:0;left:0;width:100%;height:124px;background:rgba(255,255,255,0);transition:all .5s;}
+#wrap #header.addHeader {background:rgba(255,255,255,1);}
+#wrap #header .wrap {width:100%;max-width:1570px;margin:0 auto;height:100%;}
+#wrap #header .wrap .gap {margin:0 20px;height:100%;}
+#wrap #header .wrap .gap .container {width:100%;height:100%;}
+#wrap #header .wrap .gap .container > ul {width:100%;}
+#wrap #header .wrap .gap .container > ul > li {width:auto;}
+/* 가운데 로고 */
+#wrap #header .wrap .gap .container > ul > li:nth-child(1) {z-index:1;position:absolute;width:100%;height:55px;left:0;top:34.5px;text-align:center;}
+#wrap #header .wrap .gap .container > ul > li:nth-child(1) > a.logo-btn {display:inline-block;width:288px;}
+#wrap #header .wrap .gap .container > ul > li:nth-child(1) > a.logo-btn img.white {width:100%;}
+#wrap #header .wrap .gap .container > ul > li:nth-child(1) > a.logo-btn img.color {display:none;}
+#wrap #header.addHeader .wrap .gap .container > ul > li:nth-child(1) > a.logo-btn img.white {display:none;}
+#wrap #header.addHeader .wrap .gap .container > ul > li:nth-child(1) > a.logo-btn img.color {display:block;}
+/* 왼쪽 햄버거 버튼 */
+#wrap #header .wrap .gap .container > ul > li:nth-child(2) {z-index:2;position:relative;float:left;padding:54px 0;}
+#wrap #header .wrap .gap .container > ul > li:nth-child(2) > a {display:inline-block;}
+#wrap #header .wrap .gap .container > ul > li:nth-child(2) > a > .line-box {position:relative;display:inline-block;width:18px;height:14px;}
+#wrap #header .wrap .gap .container > ul > li:nth-child(2) > a > .line-box .line {display:block;position:absolute;left:0;width:100%;height:1px;background:#fff;}
+#wrap #header.addHeader .wrap .gap .container > ul > li:nth-child(2) > a > .line-box .line {background:#222;}
+#wrap #header .wrap .gap .container > ul > li:nth-child(2) > a > .line-box .line1 {top:0;}
+#wrap #header .wrap .gap .container > ul > li:nth-child(2) > a.addBtn > .line-box .line1 {top:50%;margin-top:0;transform:rotate(135deg);}
+#wrap #header .wrap .gap .container > ul > li:nth-child(2) > a > .line-box .line2 {top:50%;margin-top:-1px;}
+#wrap #header .wrap .gap .container > ul > li:nth-child(2) > a.addBtn > .line-box .line2 {display:none;}
+#wrap #header .wrap .gap .container > ul > li:nth-child(2) > a > .line-box .line3 {bottom:0;}
+#wrap #header .wrap .gap .container > ul > li:nth-child(2) > a.addBtn > .line-box .line3 {bottom:50%;margin-bottom:-1px;transform:rotate(-135deg);}
+#wrap #header .wrap .gap .container > ul > li:nth-child(2) > a > .text {font-size:20px;color:#fff;padding-left:7px;}
+#wrap #header.addHeader .wrap .gap .container > ul > li:nth-child(2) > a > .text {color:#222;}
+/* 오른쪽 메뉴 */
+#wrap #header .wrap .gap .container > ul > li:nth-child(3) {float:right;}
+#wrap #header .wrap .gap .container > ul > li:nth-child(3) > ul {z-index:2;position:relative;display:block;padding:40px 0;}/*어차피 float right있어서 블럭해도 100% 잡히지않음*/
+#wrap #header .wrap .gap .container > ul > li:nth-child(3) > ul > li {display:inline-block;}
+#wrap #header .wrap .gap .container > ul > li:nth-child(3) > ul > li > span {display:inline-block;margin-left:15px;}
+#wrap #header .wrap .gap .container > ul > li:nth-child(3) > ul > li > span > a {display:inline-block;color:#fff;}
+#wrap #header.addHeader .wrap .gap .container > ul > li:nth-child(3) > ul > li > span > a {color:#222;}
+#wrap #header .wrap .gap .container > ul > li:nth-child(3) > ul > li > span > a.confirm-btn {position:relative;width:110px;height:38px;line-height:38px;text-align:center;color:#fff;font-size:13px;background:#222;font-weight:500;letter-spacing:1px;text-indent:-30px;}
+#wrap #header .wrap .gap .container > ul > li:nth-child(3) > ul > li > span > a.confirm-btn:after {position:absolute;top:16px;left:70%;content:"";display:block;width:6px;height:6px;border-top:2px solid #fff;border-right:2px solid #fff;transform:rotate(45deg);}
+#wrap #header.addHeader .wrap .gap .container > ul > li:nth-child(3) > ul > li > span > a.confirm-btn {background:#2e3192;}
+#wrap #header .wrap .gap .container > ul > li:nth-child(3) > ul > li > span > a > img.m-white {display:block;width:23px;}
+#wrap #header .wrap .gap .container > ul > li:nth-child(3) > ul > li > span > a > img.m-black {display:none;}
+#wrap #header.addHeader .wrap .gap .container > ul > li:nth-child(3) > ul > li > span > a > img.m-white {display:none;}
+#wrap #header.addHeader .wrap .gap .container > ul > li:nth-child(3) > ul > li > span > a > img.m-black {display:block;}
+#wrap #header .wrap .gap .container > ul > li:nth-child(3) > ul > li > span > i {display:block;width:2px;height:2px;background:#fff;}
+
+#wrap #main {z-index:1;position:relative;width:100%;}
+/* 제이슨여행사의 슬라이드는 fixed이기 때문에 섹션 전체를 fixed주고 섹션 형제들끼리 z-index로 위치 잡아주고 슬라이드 다음 섹션을 슬라이드의 높이만큼 마진탑으로 밑으로 눌러줌*/
+#wrap #main #section1 {z-index:1;position:fixed;top:0;left:0;width:100%;height:auto;background:#fff;height:969px;/* 임시높이,js에서창높이로바꿔줄것 */}
+#wrap #main #section1 .wrap {width:100%;height:100%;}
+#wrap #main #section1 .wrap .gap {width:100%;height:100%;}
+#wrap #main #section1 .wrap .gap .container {width:100%;height:100%;}
+#wrap #main #section1 .wrap .gap .container .slide-container {position:relative;position:relative;width:100%;height:100%;}
+#wrap #main #section1 .wrap .gap .container .slide-container .slide-view {position:relative;position:relative;width:100%;height:100%;}
+#wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap {position:relative;left:(-100%*0);width:calc(100%*6);margin-left:-100%;height:100%;}
+#wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide {float:left;width:1903px;height:100%;}
+#wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide0 {background:url(../img/slide0.jpg) no-repeat 50% 0;background-size:cover;}
+#wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide1 {background:url(../img/slide1.jpg) no-repeat 50% 0;background-size:cover;}
+#wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide2 {background:url(../img/slide2.jpg) no-repeat 50% 0;background-size:cover;}
+#wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide3 {background:url(../img/slide3.jpg) no-repeat 50% 0;background-size:cover;}
+
+#wrap #main #section2 {margin-top:969px;z-index:2;position:relative;width:100%;height:auto;background:#fff;height:1200px;/* 임시높이 */}
+#wrap #main #section3 {z-index:2;position:relative;width:100%;height:auto;background:#fff;height:700px;/* 임시높이 */}
+#wrap #main #section4 {z-index:2;position:relative;width:100%;height:auto;background:#f6f6f6;height:500px;/* 임시높이 */}
+#wrap #main #section5 {z-index:2;position:relative;width:100%;height:auto;background:#fff;height:250px;/* 임시높이 */}
+#wrap #footer {z-index:2;position:relative;width:100%;height:253.4px;/* 임시높이 */background:#303030;} 
+/* 고정이미지가 내려가면 푸터를 가리니까(마치 몸통은 이불덮고 발은 나오것마냥) z-index 순서를 메인이랑 바꿈 */
+
