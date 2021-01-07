@@ -224,7 +224,23 @@
 
         },
         section2Fn : function(){
+            var $win = $(window);
+            var $gal = $(".gallery li");
+            var $galW = $(".gallery li").innerWidth();
+            var $galH = $galW * $imageR;
+            var $imageR = 0.83243503;
             //창너비 변화에 따른 갤러리 높이 비율
+            setTimeout(resizeFn,10);
+            function resizeFn(){
+                $galW = $(".gallery li").innerWidth();
+                $galH = $galW * $imageR;
+                $gal.css({ height : $galH });
+            }
+
+            $win.resize(function(){
+                resizeFn();
+            })
+
         },
         section3Fn : function(){
             

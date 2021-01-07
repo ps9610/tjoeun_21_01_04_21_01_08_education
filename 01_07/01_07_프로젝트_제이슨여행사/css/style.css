@@ -116,8 +116,8 @@
 #wrap #main #section2 .wrap .gap .container .content .gallery > li .gallery-wrap .gallery-image-bg .hover-btn {z-index:1;position:absolute;top:0;left:0;display:block;width:100%;height:100%;background:#2e3192;opacity:0;transition:opacity .4s;}
 #wrap #main #section2 .wrap .gap .container .content .gallery > li:hover .gallery-wrap .gallery-image-bg .hover-btn {opacity:.9;}
 
-#wrap #main #section2 .wrap .gap .container .content .gallery > li .gallery-wrap .caption {width:100%;height:83px;letter-spacing:.5px;text-align:center;padding:15px 0 10px 0;}
-#wrap #main #section2 .wrap .gap .container .content .gallery > li .gallery-wrap .caption > h4 {font-family:'Times New Roman', Times, serif;font-size:14px;color:#2e3192;font-weight:bold;padding-bottom:7px;}
+#wrap #main #section2 .wrap .gap .container .content .gallery > li .gallery-wrap .caption {width:100%;height:15.85987261%;letter-spacing:.5px;text-align:center;padding:2.86624204% 0 0.91082802% 0;}
+#wrap #main #section2 .wrap .gap .container .content .gallery > li .gallery-wrap .caption > h4 {font-family:'Times New Roman', Times, serif;font-size:14px;color:#2e3192;font-weight:bold;padding-bottom:1.337579617%;}
 #wrap #main #section2 .wrap .gap .container .content .gallery > li .gallery-wrap .caption > h3 {font-family:'Nanum Gothic';font-size:20px;color:#000;font-weight:800;}
 
 #wrap #main #section3 {height:700px;/* 임시높이 */}
