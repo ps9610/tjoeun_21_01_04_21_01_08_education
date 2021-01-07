@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
-#wrap #header {z-index:3;position:fixed;top:0;left:0;width:100%;height:124px;background:rgba(255,255,255,0);transition:all .5s;}
-#wrap #header.addHeader {background:rgba(255,255,255,1);}
+#wrap #header {z-index:3;position:fixed;top:0;left:0;width:100%;height:124px;background:rgba(255,255,255,0);transition:all .5s;box-shadow:0 4px 8px rgba(0,0,0,0);}/* box-shadow:좌우(수평) 상하(수직) 블러,보통수직수평의2배(Blur) 색상; */
+#wrap #header.addHeader {background:rgba(255,255,255,1);box-shadow:0 6px 12px rgba(0,0,0,.25);}
 #wrap #header .wrap {width:100%;max-width:1570px;margin:0 auto;height:100%;}
 #wrap #header .wrap .gap {margin:0 20px;height:100%;}
 #wrap #header .wrap .gap .container {width:100%;height:100%;}
@@ -15,30 +15,33 @@
 #wrap #header.addHeader .wrap .gap .container > ul > li:nth-child(1) > a.logo-btn img.white {display:none;}
 #wrap #header.addHeader .wrap .gap .container > ul > li:nth-child(1) > a.logo-btn img.color {display:block;}
 /* 왼쪽 햄버거 버튼 */
-#wrap #header .wrap .gap .container > ul > li:nth-child(2) {z-index:2;position:relative;float:left;padding:54px 0;}
+#wrap #header .wrap .gap .container > ul > li:nth-child(2) {z-index:2;position:relative;float:left;padding:55px 0;}
 #wrap #header .wrap .gap .container > ul > li:nth-child(2) > a {display:inline-block;}
-#wrap #header .wrap .gap .container > ul > li:nth-child(2) > a > .line-box {position:relative;display:inline-block;width:18px;height:14px;}
-#wrap #header .wrap .gap .container > ul > li:nth-child(2) > a > .line-box .line {display:block;position:absolute;left:0;width:100%;height:1px;background:#fff;}
-#wrap #header.addHeader .wrap .gap .container > ul > li:nth-child(2) > a > .line-box .line {background:#222;}
-#wrap #header .wrap .gap .container > ul > li:nth-child(2) > a > .line-box .line1 {top:0;}
-#wrap #header .wrap .gap .container > ul > li:nth-child(2) > a.addBtn > .line-box .line1 {top:50%;margin-top:0;transform:rotate(135deg);}
-#wrap #header .wrap .gap .container > ul > li:nth-child(2) > a > .line-box .line2 {top:50%;margin-top:-1px;}
-#wrap #header .wrap .gap .container > ul > li:nth-child(2) > a.addBtn > .line-box .line2 {display:none;}
-#wrap #header .wrap .gap .container > ul > li:nth-child(2) > a > .line-box .line3 {bottom:0;}
-#wrap #header .wrap .gap .container > ul > li:nth-child(2) > a.addBtn > .line-box .line3 {bottom:50%;margin-bottom:-1px;transform:rotate(-135deg);}
-#wrap #header .wrap .gap .container > ul > li:nth-child(2) > a > .text {font-size:20px;color:#fff;padding-left:7px;}
+#wrap #header .wrap .gap .container > ul > li:nth-child(2) > a .line-box {position:relative;display:inline-block;width:18px;height:14px;}
+#wrap #header .wrap .gap .container > ul > li:nth-child(2) > a .line-box .line {display:block;position:absolute;left:0;width:100%;height:1px;background:#fff;}
+#wrap #header.addHeader .wrap .gap .container > ul > li:nth-child(2) > a .line-box .line {background:#222;}
+#wrap #header .wrap .gap .container > ul > li:nth-child(2) > a .line-box .line1 {top:0;}
+#wrap #header .wrap .gap .container > ul > li:nth-child(2) > a.addBtn .line-box .line1 {top:50%;margin-top:0;transform:rotate(135deg);}
+#wrap #header .wrap .gap .container > ul > li:nth-child(2) > a .line-box .line2 {top:50%;margin-top:-1px;}
+#wrap #header .wrap .gap .container > ul > li:nth-child(2) > a.addBtn .line-box .line2 {display:none;}
+#wrap #header .wrap .gap .container > ul > li:nth-child(2) > a .line-box .line3 {bottom:0;}
+#wrap #header .wrap .gap .container > ul > li:nth-child(2) > a.addBtn .line-box .line3 {bottom:50%;margin-bottom:-1px;transform:rotate(-135deg);}
+#wrap #header .wrap .gap .container > ul > li:nth-child(2) > a .text {font-size:20px;color:#fff;padding-left:7px;}
 #wrap #header.addHeader .wrap .gap .container > ul > li:nth-child(2) > a > .text {color:#222;}
 /* 오른쪽 메뉴 */
 #wrap #header .wrap .gap .container > ul > li:nth-child(3) {float:right;}
 #wrap #header .wrap .gap .container > ul > li:nth-child(3) > ul {z-index:2;position:relative;display:block;padding:40px 0;}/*어차피 float right있어서 블럭해도 100% 잡히지않음*/
 #wrap #header .wrap .gap .container > ul > li:nth-child(3) > ul > li {display:inline-block;}
 #wrap #header .wrap .gap .container > ul > li:nth-child(3) > ul > li > span {display:inline-block;margin-left:15px;}
-#wrap #header .wrap .gap .container > ul > li:nth-child(3) > ul > li > span > a {display:inline-block;color:#fff;}
+#wrap #header .wrap .gap .container > ul > li:nth-child(3) > ul > li > span > a {display:inline-block;color:#fff;font-size:15px;}
 #wrap #header.addHeader .wrap .gap .container > ul > li:nth-child(3) > ul > li > span > a {color:#222;}
-#wrap #header .wrap .gap .container > ul > li:nth-child(3) > ul > li > span > a.confirm-btn {position:relative;width:110px;height:38px;line-height:38px;text-align:center;color:#fff;font-size:13px;background:#222;font-weight:500;letter-spacing:1px;text-indent:-30px;}
+#wrap #header .wrap .gap .container > ul > li:nth-child(3) > ul > li > span > a.confirm-btn {position:relative;width:110px;height:38px;line-height:38px;text-align:center;color:#fff;font-size:13px;background:#222;font-weight:500;letter-spacing:1px;text-indent:-20px;}
 #wrap #header .wrap .gap .container > ul > li:nth-child(3) > ul > li > span > a.confirm-btn:after {position:absolute;top:16px;left:70%;content:"";display:block;width:6px;height:6px;border-top:2px solid #fff;border-right:2px solid #fff;transform:rotate(45deg);}
 #wrap #header.addHeader .wrap .gap .container > ul > li:nth-child(3) > ul > li > span > a.confirm-btn {background:#2e3192;}
-#wrap #header .wrap .gap .container > ul > li:nth-child(3) > ul > li > span > a > img.m-white {display:block;width:23px;}
+#wrap #header .wrap .gap .container > ul > li:nth-child(3) > ul > li > span > a.confirm-btn > span {display:inline-block;line-height:15px;}
+#wrap #header .wrap .gap .container > ul > li:nth-child(3) > ul > li > span > a.confirm-btn > span > br {display:none;}
+#wrap #header .wrap .gap .container > ul > li:nth-child(3) > ul > li > span > a > img {width:23px;}
+#wrap #header .wrap .gap .container > ul > li:nth-child(3) > ul > li > span > a > img.m-white {display:block;}
 #wrap #header .wrap .gap .container > ul > li:nth-child(3) > ul > li > span > a > img.m-black {display:none;}
 #wrap #header.addHeader .wrap .gap .container > ul > li:nth-child(3) > ul > li > span > a > img.m-white {display:none;}
 #wrap #header.addHeader .wrap .gap .container > ul > li:nth-child(3) > ul > li > span > a > img.m-black {display:block;}
@@ -53,7 +56,7 @@
 #wrap #main #section1 .wrap .gap .container .slide-container {position:relative;position:relative;width:100%;height:100%;}
 #wrap #main #section1 .wrap .gap .container .slide-container .slide-view {z-index:1;position:relative;width:100%;height:100%;}
 #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap {position:relative;left:calc(-100%*0);width:calc(100%*6);margin-left:-100%;height:100%;}
-#wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide {float:left;width:1903px;height:100%;}
+#wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide {float:left;width:1903px;/* 슬라이드 너비 창 너비로 설정 */height:100%;}
 #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide0 {background:url(../img/slide0.jpg) no-repeat 50% 0;background-size:cover;}
 #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide1 {background:url(../img/slide1.jpg) no-repeat 50% 0;background-size:cover;}
 #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide2 {background:url(../img/slide2.jpg) no-repeat 50% 0;background-size:cover;}
@@ -74,8 +77,8 @@
 #wrap #main #section1 .wrap .gap .container .slide-container .page-btn-wrap > ul > li {width:25%;float:left;}
 #wrap #main #section1 .wrap .gap .container .slide-container .page-btn-wrap > ul > li > div {margin:0 5px;}
 #wrap #main #section1 .wrap .gap .container .slide-container .page-btn-wrap > ul > li > div > a {display:block;width:100%;height:5px;background:rgba(255,255,255,.3);}
-#wrap #main #section1 .wrap .gap .container .slide-container .page-btn-wrap > ul > li > div > a > i {display:block;width:0;height:100%;background:rgba(255,255,255,1);transition:all 3s;}
-#wrap #main #section1 .wrap .gap .container .slide-container .page-btn-wrap > ul > li > div > a.addCurrent > i {width:100%;}
+#wrap #main #section1 .wrap .gap .container .slide-container .page-btn-wrap > ul > li > div > a > i {display:block;width:0;height:100%;background:rgba(255,255,255,1);}/*transition 지워야 길어지는것만 보임*/
+#wrap #main #section1 .wrap .gap .container .slide-container .page-btn-wrap > ul > li > div > a.addCurrent > i {width:100%;transition:all 3s;}/* js autoplayFn timer seconds */
 #wrap #main #section1 .wrap .gap .container .slide-container .page-btn-wrap > ul > li > div > a:hover > i {width:100%;}
 
 /* 섹션 2,3,4,5 공용 스타잃 */
