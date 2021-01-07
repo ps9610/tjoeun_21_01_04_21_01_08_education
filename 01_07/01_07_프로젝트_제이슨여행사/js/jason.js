@@ -200,7 +200,7 @@
                     $htmlBody.stop().animate({ scrollTop : $(url).offset().top-$headerH },600) //124 = header innerheight;
                     //이 버튼의 href 속성의 탑 값을 스크롤탑값으로 받아라
                     //그리고 url(이 버튼의 href 속성)을 매개변수로 제이쿼리를 실행시켜 움직여라.
-                    console.log($htmlBody.scrollTop());
+                    //console.log($htmlBody.scrollTop());
                 }
             })
             /////////////////////////스무스버튼/////////////////////////
