@@ -58,13 +58,13 @@
             var cnt2 = 0;
             var setId = 0;
             var setId2 = 0;
-            var n = $(".slide").length-2;
-            var $nextBtn = $(".next-btn");
-            var $prevBtn = $(".prev-btn");
-            var $slideWrap = $(".slide-wrap");
-            var $pageBtn = $(".page-btn");
+            var n = $("#section1 .slide").length-2;
+            var $nextBtn = $("#section1 .next-btn");
+            var $prevBtn = $("#section1 .prev-btn");
+            var $slideWrap = $("#section1 .slide-wrap");
+            var $pageBtn = $("#section1 .page-btn");
             var $s = 4;
-            var $slideContainer = $(".slide-container");
+            var $slideContainer = $("#section1 .slide-container");
             var $smoothBtn = $(".smooth-btn");
             var $htmlBody = $("html, body");
             var $headerH = $("#header").innerHeight();
@@ -73,7 +73,7 @@
             var $winH = $window.innerHeight();
             var $section1 = $("#section1");
             var $section2 = $("#section2");
-            var $slide = $(".slide");
+            var $slide = $("#section1 .slide");
 
             /////////////////////////슬라이드/////////////////////////
 
@@ -225,14 +225,14 @@
         },
         section2Fn : function(){
             var $win = $(window);
-            var $gal = $(".gallery li");
-            var $galW = $(".gallery li").innerWidth();
+            var $gal = $("#section2 .gallery li");
+            var $galW = $gal.innerWidth();
             var $galH = $galW * $imageR;
             var $imageR = 0.83243503;
             //창너비 변화에 따른 갤러리 높이 비율
             setTimeout(resizeFn,10);
             function resizeFn(){
-                $galW = $(".gallery li").innerWidth();
+                $galW = $gal.innerWidth();
                 $galH = $galW * $imageR;
                 $gal.css({ height : $galH });
             }

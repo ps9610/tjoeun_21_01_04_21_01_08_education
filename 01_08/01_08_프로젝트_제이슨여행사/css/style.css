@@ -87,11 +87,11 @@
 #wrap #main .section2345 .wrap .gap {width:100%;}
 #wrap #main .section2345 .wrap .gap .container {width:100%;}
 
-#wrap #main #section2 {margin-top:969px;}
-#wrap #main #section2 .wrap .gap .container .title {width:100%;}
-#wrap #main #section2 .wrap .gap .container .title > h2 {font-size:33px;text-align:center;color:#000;font-size:500;}
-#wrap #main #section2 .wrap .gap .container .title > h2:after {content:"";display:block;width:100px;border-bottom:1px solid #ccc;height:25px;margin:0 auto;}
+#wrap #main .section2345 .wrap .gap .container .title {width:100%;}
+#wrap #main .section2345 .wrap .gap .container .title > h2 {font-size:33px;text-align:center;color:#000;font-size:500;}
+#wrap #main .section2345 .wrap .gap .container .title > h2:after {content:"";display:block;width:100px;border-bottom:1px solid #ccc;height:25px;margin:0 auto;}
 
+#wrap #main #section2 {margin-top:969px;}
 #wrap #main #section2 .wrap .gap .container .content {width:100%;}
 #wrap #main #section2 .wrap .gap .container .content .gallery {width:100%;}
 #wrap #main #section2 .wrap .gap .container .content .gallery > li {float:left;width:33.333333%;height:435.648359px;/* js/window.innerHeight() */cursor:pointer;}
@@ -120,8 +120,34 @@
 #wrap #main #section2 .wrap .gap .container .content .gallery > li .gallery-wrap .caption > h4 {font-family:'Times New Roman', Times, serif;font-size:14px;color:#2e3192;font-weight:bold;padding-bottom:1.337579617%;}
 #wrap #main #section2 .wrap .gap .container .content .gallery > li .gallery-wrap .caption > h3 {font-family:'Nanum Gothic';font-size:20px;color:#000;font-weight:800;}
 
-#wrap #main #section3 {height:700px;/* 임시높이 */}
+#wrap #main #section3 {height:auto/* 700px */;padding:0 0 130px 0;}
+#wrap #main .section2345 .wrap .gap {width:auto;margin:0 20px;}
+#wrap #main #section3 .wrap .gap .container .content {width:100%;padding:120px 0 0 0;}
+#wrap #main #section3 .wrap .gap .container .content .slide-container {position:relative;width:100%;height:570px;border:4px solid #2e3192;box-sizing:border-box;}
+#wrap #main #section3 .wrap .gap .container .content .slide-container .slide-view {position:relative;width:100%;height:100%;}
+#wrap #main #section3 .wrap .gap .container .content .slide-container .slide-view .slide-wrap {position:relative;width:100%;height:100%;}
+#wrap #main #section3 .wrap .gap .container .content .slide-container .slide-view .slide-wrap .slide {position:absolute;top:0;left:0;width:100%;height:100%;background:#fff;}
+#wrap #main #section3 .wrap .gap .container .content .slide-container .slide-view .slide-wrap .slide1 {z-index:3;}
+#wrap #main #section3 .wrap .gap .container .content .slide-container .slide-view .slide-wrap .slide2 {z-index:2;}
+#wrap #main #section3 .wrap .gap .container .content .slide-container .slide-view .slide-wrap .slide3 {z-index:1;}
+
+#wrap #main #section3 .wrap .gap .container .content .slide-container .slide-view .slide-wrap .slide .slide-content {width:100%;max-width:1200px;height:100%;margin:0 auto;padding:0 5.882352941%/* 80px */;}
+#wrap #main #section3 .wrap .gap .container .content .slide-container .slide-view .slide-wrap .slide .slide-content .left-wrap {float:left;width:47.5%/* 570px */;height:100%;margin-top:-5.26315789%/* -60px에서 /2 또 해줌 */;}
+#wrap #main #section3 .wrap .gap .container .content .slide-container .slide-view .slide-wrap .slide .slide-content .left-wrap .slide-bg-image {width:100%;height:100%;}
+#wrap #main #section3 .wrap .gap .container .content .slide-container .slide-view .slide-wrap .slide1 .slide-content .left-wrap .slide-bg-image {background:url(../img/main-slide0.jpeg) no-repeat 50% 50%;background-size:cover;}
+#wrap #main #section3 .wrap .gap .container .content .slide-container .slide-view .slide-wrap .slide2 .slide-content .left-wrap .slide-bg-image {background:url(../img/main-slide1.jpg) no-repeat 50% 50%;background-size:cover;}
+#wrap #main #section3 .wrap .gap .container .content .slide-container .slide-view .slide-wrap .slide2 .slide-content .left-wrap .slide-bg-image {background:url(../img/main-slide2.jpg) no-repeat 50% 50%;background-size:cover;}
+
+#wrap #main #section3 .wrap .gap .container .content .slide-container .slide-view .slide-wrap .slide .slide-content .right-wrap {float:right;width:41.66666667%/* 500px */;height:100%;}
+#wrap #main #section3 .wrap .gap .container .content .slide-container .slide-view .slide-wrap .slide .slide-content .right-wrap .text-gap {padding:16%/* 80px */ 0 0 0;}
+#wrap #main #section3 .wrap .gap .container .content .slide-container .slide-view .slide-wrap .slide .slide-content .right-wrap .text-gap .slide-text {width:100%;}
+#wrap #main #section3 .wrap .gap .container .content .slide-container .slide-view .slide-wrap .slide .slide-content .right-wrap .text-gap .slide-text > h3 {font-size:24px;}
+#wrap #main #section3 .wrap .gap .container .content .slide-container .slide-view .slide-wrap .slide .slide-content .right-wrap .text-gap .slide-text > h3 > a {display:inline-block;color:#2e3192;font-weight:600;}
+#wrap #main #section3 .wrap .gap .container .content .slide-container .slide-view .slide-wrap .slide .slide-content .right-wrap .text-gap .slide-text > h4 {padding:4%/* 20px */ 0 6%/* 30px */;font-size:18px;font-weight:500;color:#222;}
+#wrap #main #section3 .wrap .gap .container .content .slide-container .slide-view .slide-wrap .slide .slide-content .right-wrap .text-gap .slide-text > p {font-size:14px;color:#666;line-height:160%;}
+
 #wrap #main #section4 {background:#f6f6f6;height:500px;/* 임시높이 */}
+
 #wrap #main #section5 {height:250px;/* 임시높이 */padding:30px 0;}
 #wrap #footer {z-index:2;position:relative;width:100%;height:253.4px;/* 임시높이 */background:#303030;} 
 /* 고정이미지가 내려가면 푸터를 가리니까(마치 몸통은 이불덮고 발은 나오것마냥) z-index 순서를 메인이랑 바꿈 */
