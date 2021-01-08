@@ -58,13 +58,13 @@
             var cnt2 = 0;
             var setId = 0;
             var setId2 = 0;
-            var n = $(".slide").length-2;
-            var $nextBtn = $(".next-btn");
-            var $prevBtn = $(".prev-btn");
-            var $slideWrap = $(".slide-wrap");
-            var $pageBtn = $(".page-btn");
+            var n = $("#section1 .slide").length-2;
+            var $nextBtn = $("#section1 .next-btn");
+            var $prevBtn = $("#section1 .prev-btn");
+            var $slideWrap = $("#section1 .slide-wrap");
+            var $pageBtn = $("#section1 .page-btn");
             var $s = 4;
-            var $slideContainer = $(".slide-container");
+            var $slideContainer = $("#section1 .slide-container");
             var $smoothBtn = $(".smooth-btn");
             var $htmlBody = $("html, body");
             var $headerH = $("#header").innerHeight();
@@ -73,7 +73,7 @@
             var $winH = $window.innerHeight();
             var $section1 = $("#section1");
             var $section2 = $("#section2");
-            var $slide = $(".slide");
+            var $slide = $("#section1 .slide");
 
             /////////////////////////슬라이드/////////////////////////
 
@@ -225,14 +225,14 @@
         },
         section2Fn : function(){
             var $win = $(window);
-            var $gal = $(".gallery li");
-            var $galW = $(".gallery li").innerWidth();
+            var $gal = $("#section2 .gallery li");
+            var $galW = $gal.innerWidth();
             var $galH = $galW * $imageR;
             var $imageR = 0.83243503;
             //창너비 변화에 따른 갤러리 높이 비율
             setTimeout(resizeFn,10);
             function resizeFn(){
-                $galW = $(".gallery li").innerWidth();
+                $galW = $gal.innerWidth();
                 $galH = $galW * $imageR;
                 $gal.css({ height : $galH });
             }
@@ -243,7 +243,35 @@
 
         },
         section3Fn : function(){
-            
+            //slide-view 너비 1360이하 = 박스 높이 자동 설정
+            var $window = $(window);
+            var $winW = $(window).innerWidth();
+            var $slideView = $("#section3 .slide-view");
+            var $slideViewR = 0.419117647;
+            var $pageBtnW = $("#section3 .pageBtn").innerWidth();
+            var $pageWrap = $("#section3 .page-wrap");
+            var $slideBg  = $("#section3 .slide-bg-image");
+            var $slideBgW = $("#section3 .slide-bg-image").innerWidth();
+
+            setTimeout(resizeFn,10);
+
+            function resizeFn(){
+                $winw = $(window).innerWidth();
+
+                if( $winW <= 1360 ){
+                    $slideView.css({ height : $slideViewR*$winw }); //winW:1360 slide View Width : 570, height:419가 나와야함
+                    $pageWrap.css({ height : $pageBtnW });
+                    $slideBg.css({ height : $slideBgW });
+                }            
+                else{
+                    $slideView.css({ height : 570 }) // 1360초과면 고정값 570
+                }
+            }
+
+            $window.resize(function(){
+                resizeFn();
+            })
+
         },
         section4Fn : function(){
             
