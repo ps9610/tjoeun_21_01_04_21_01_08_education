@@ -243,7 +243,35 @@
 
         },
         section3Fn : function(){
-            
+            //slide-view 너비 1360이하 = 박스 높이 자동 설정
+            var $window = $(window);
+            var $winW = $(window).innerWidth();
+            var $slideView = $("#section3 .slide-view");
+            var $slideViewR = 0.419117647;
+            var $pageBtnW = $("#section3 .pageBtn").innerWidth();
+            var $pageWrap = $("#section3 .page-wrap");
+            var $slideBg  = $("#section3 .slide-bg-image");
+            var $slideBgW = $("#section3 .slide-bg-image").innerWidth();
+
+            setTimeout(resizeFn,10);
+
+            function resizeFn(){
+                $winw = $(window).innerWidth();
+
+                if( $winW <= 1360 ){
+                    $slideView.css({ height : $slideViewR*$winw }); //winW:1360 slide View Width : 570, height:419가 나와야함
+                    $pageWrap.css({ height : $pageBtnW });
+                    $slideBg.css({ height : $slideBgW });
+                }            
+                else{
+                    $slideView.css({ height : 570 }) // 1360초과면 고정값 570
+                }
+            }
+
+            $window.resize(function(){
+                resizeFn();
+            })
+
         },
         section4Fn : function(){
             
