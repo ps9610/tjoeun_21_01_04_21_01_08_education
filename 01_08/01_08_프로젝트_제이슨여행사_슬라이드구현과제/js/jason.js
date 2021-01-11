@@ -247,12 +247,15 @@
             var $window = $(window);
             var $winW = $(window).innerWidth();
             var $slideView = $("#section3 .slide-view");
+            var $slide = $("#section3 .slide");
             var $slideViewR = 0.419117647;
-            var $pageBtnW = $("#section3 .pageBtn").innerWidth();
+            var $pageBtn = $("#section3 .pageBtn");
+            var $pageBtnW = $pageBtn.innerWidth();
             var $pageWrap = $("#section3 .page-wrap");
             var $slideBg  = $("#section3 .slide-bg-image");
             var $slideBgW = $("#section3 .slide-bg-image").innerWidth();
-
+            var cnt = 0;
+            
             setTimeout(resizeFn,10);
 
             function resizeFn(){
@@ -271,6 +274,30 @@
             $window.resize(function(){
                 resizeFn();
             })
+
+            //슬라이드 과제
+
+            setTimeout(nextSlideFn,10);
+            function mainPrevSlideFn(){
+                $slide.css( {zIndex : 1 }).stop().animate({ opacity : 1 },0);
+                $slide.css.eq(1)( {zIndex : 2 });
+                $slide.css.eq(2)( {zIndex : 3 }).stop().animate({ opacity : 0 },0).animate({ opacity : 1 },800);
+            }
+            function mainNextSlideFn(){
+                $slide.css( {zIndex : 1 }).stop().animate({ opacity : 1 },0);
+                $slide.eq(2).css( {zIndex : 2 });
+                $slide.eq(0).css( {zIndex : 3 }).stop().animate({ opacity : 1 },0).animate({ opacity : 0 },800);
+            }
+            // 0 1 1 2 / 1 2 2 0 /2 0 0 1
+
+            function nextSlideFn(){
+                cnt++;
+                mainNextSlideFn();
+            }
+            function prevSlideFn(){
+                cnt--;
+                mainPrevSlideFn();
+            }
 
         },
         section4Fn : function(){
